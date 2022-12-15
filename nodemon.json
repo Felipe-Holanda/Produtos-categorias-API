@@ -1,0 +1,8 @@
+{
+  "events": {
+    "start": "clear"
+  },
+  "execMap": {
+    "js": "node -r sucrase/register"
+  }
+}
