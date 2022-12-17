@@ -1,11 +1,11 @@
 import express from "express"
-import categoryRoutes from "./routers/categories.routes"
-import productRoutes from "./routers/products.routes"
+import categoriesRoutes from "./routes/categories.routes"
+import productsRoutes from "./routes/products.routes"
 
 const app = express()
 
 app.use(express.json())
-app.use(categoryRoutes)
-app.use(productRoutes)
+app.use("/categories", categoriesRoutes)
+app.use("/products", productsRoutes)
 
 export default app
